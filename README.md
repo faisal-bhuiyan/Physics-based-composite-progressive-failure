@@ -9,10 +9,12 @@ This repository contains the implementation of KTF-based progressive damage mode
 4. Define materials properties in `MODULE KTF_CONSTANTS` and `MODULE MATERIAL_PROPS`, in addition to the constituent and homogenized properties supplied via the text file called `MAT_FILE`. These properties can be computed using the provided Matlab routines, which require lamina level elastic properties and fatigue test data as inputs.
 5. Run subroutine on the provided input files - especially the one element and the 140 element models to ensure things are working as intended. This code was not developed with good SW development practices in mind, so it can be fragile and painful to work with. Be patient while you're trying to run it for the first time.
 6. Debugging in Fortran can be kind of painful. Uncomment the existing WRITE statements as required to print the debug statements throughout the UMAT.
-7. Github restricts large files in the repos. Some of the larger input files to test the UMAT can be found [here](https://www.dropbox.com/scl/fo/i652cclt1f8b5o3gxb7j4/h?dl=0&rlkey=eqkpknacibwhk5h6xh4rr7faf)
+7. Github restricts large files in the repos. Some of the larger input files to test the UMAT can be found [here](https://www.dropbox.com/scl/fo/i652cclt1f8b5o3gxb7j4/h?dl=0&rlkey=eqkpknacibwhk5h6xh4rr7faf).
 
 ## Directories
 
 `src` - contains the source files required to run the UMAT. `subroutines` contain several versions of the same UMAT, name of the file indicates what is different in each one.
+
 `input-files` - contains several input files to test the UMATs on.
+
 `utils` - contains a complete set of material properties.
